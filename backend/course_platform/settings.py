@@ -23,11 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ryp$(g$x23=kffz#=d$e6r@m$7@jtb&mnh2@$ri3rsp*5*4kgh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = ['online-course-platform-new.onrender.com', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,9 +39,8 @@ INSTALLED_APPS = [
     'courses',
     'corsheaders',
 ]
-CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173"
+    "https://online-course-platform-new.vercel.app"
    
 ]
 MIDDLEWARE = [
